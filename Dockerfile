@@ -1,4 +1,4 @@
-FROM php:latest
+FROM FROM php:5.6-apache
 
 MAINTAINER Bogdan Calomfirescu <bogdan.calomfirescu@yahoo.com>
 ENV PS_VERSION 1.6.1.4
@@ -16,8 +16,8 @@ ENV PS_HANDLE_DYNAMIC_DOMAIN 0
 ENV PS_FOLDER_ADMIN admin
 ENV PS_FOLDER_INSTALL install
 
-RUN yum update \
-	&& yum install -y libmcrypt-dev \
+RUN apt-get update \
+	&& apt-get install -y libmcrypt-dev \
 		libjpeg62-turbo-dev \
 		libpng12-dev \
 		libfreetype6-dev \
