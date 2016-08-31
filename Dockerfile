@@ -1,4 +1,4 @@
-FROM php:5.6-apache
+FROM php:5.6
 
 MAINTAINER Bogdan Calomfirescu <bogdan.calomfirescu@yahoo.com>
 ENV PS_VERSION 1.6.1.4
